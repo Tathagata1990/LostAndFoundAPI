@@ -10,6 +10,7 @@ Note: The PDF file is present in the resources. The item name, quantity and plac
 * GET /api/claims : Provides a list of claimed items and associated users
 
 * GET /api/user/{userId} : Provides the details of the user for which the user id has been passed as a parameter
+Note: This is a mock endpoint
 
 The project can be compiled and tested by the following maven command
 
