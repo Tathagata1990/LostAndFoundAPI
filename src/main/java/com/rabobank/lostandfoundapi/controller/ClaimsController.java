@@ -35,7 +35,8 @@ public class ClaimsController {
                     content = @Content(schema = @Schema(implementation = ErrorResponse.class))
             )
     })
-    @PostMapping(name = "/claim",
+    @PostMapping(value = "/claim",
+            consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.TEXT_PLAIN_VALUE)
     public ResponseEntity<String> claimLostItem(@RequestBody @Valid ClaimRequest claimRequest) {
         claimsBO.claimLostItem(claimRequest);

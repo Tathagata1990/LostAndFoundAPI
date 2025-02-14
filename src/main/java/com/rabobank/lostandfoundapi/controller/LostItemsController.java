@@ -35,7 +35,7 @@ public class LostItemsController {
                     content = @Content(schema = @Schema(implementation = ErrorResponse.class))
             )
     })
-    @PostMapping(path = "/upload",
+    @PostMapping(value = "/upload",
             consumes = MediaType.MULTIPART_FORM_DATA_VALUE,
             produces = MediaType.TEXT_PLAIN_VALUE)
     public ResponseEntity<String> uploadDocument(
